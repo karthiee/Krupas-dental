@@ -1,0 +1,70 @@
+:root {
+  /* Color Palette - Premium Medical */
+  --color-primary: #0A58CA; /* Deep trustworthy blue */
+  --color-primary-light: #EBF3FF;
+  --color-primary-dark: #0043A6;
+  --color-secondary: #00B4D8; /* Vibrant accent blue */
+  --color-text-main: #1A202C; /* Very dark grayish blue */
+  --color-text-muted: #4A5568;
+  --color-background: #F7FAFC; /* Soft clean white */
+  --color-surface: #FFFFFF;
+  
+  /* Typography */
+  --font-main: 'Plus Jakarta Sans', sans-serif;
+  
+  /* Layout & Spacing */
+  --max-width: 1280px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-full: 9999px;
+  
+  /* Shadows - Soft & Modern */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 12px rgba(10, 88, 202, 0.08); /* slight blue tint to shadow */
+  --shadow-lg: 0 10px 25px rgba(10, 88, 202, 0.12);
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-background);
+  color: var(--color-text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  background: none;
+}
+
+/* Utilities */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
